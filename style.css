@@ -1,5 +1,6 @@
+       /* SKILLS */
         .contenedor-skills {
-            background: linear-gradient( rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.82)), url("fondo-skills.jpg");
+            background: linear-gradient( rgba(15, 23, 42, 0.78), rgba(15, 23, 42, 0.82)), url("img/fondo-skills.jpg");
             background-attachment: fixed;
             background-repeat: no-repeat;
             background-size: cover;
@@ -36,9 +37,30 @@
         
         .contenedor-skills .skill .barra .barra-progreso1 {
             background-color: #fff;
-            width: 70%;
+            width: 95%;
             height: 6px;
             animation: progreso1 2s forwards;
+        }
+        
+        .contenedor-skills .skill .barra .barra-progreso2 {
+            background-color: #fff;
+            width: 90%;
+            height: 6px;
+            animation: progreso2 2s forwards;
+        }
+        
+        .contenedor-skills .skill .barra .barra-progreso3 {
+            background-color: #fff;
+            width: 90%;
+            height: 6px;
+            animation: progreso3 2s forwards;
+        }
+        
+        .contenedor-skills .skill .barra .barra-progreso4 {
+            background-color: #fff;
+            width: 85%;
+            height: 6px;
+            animation: progreso4 2s forwards;
         }
         
         @keyframes progreso1 {
@@ -46,7 +68,34 @@
                 width: 0;
             }
             100% {
-                width: 70%;
+                width: 95%;
+            }
+        }
+        
+        @keyframes progreso2 {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 90%;
+            }
+        }
+        
+        @keyframes progreso3 {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 90%;
+            }
+        }
+        
+        @keyframes progreso4 {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 85%;
             }
         }
         
