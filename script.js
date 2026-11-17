@@ -1,10 +1,17 @@
-
+// Anima las barras cuando la sección de habilidades entra en pantalla.
 function efectoHabilidades() {
-    const dist_skills = window.innerHeight-skills.getBoundingClientRect().top;
-    if (dist_skills >= 180) {
-        document.getElementById('html').classList.add('barra-progreso1');
+    var skills = document.getElementById('skills');
+    if (!skills) return;
+    if (window.innerHeight - skills.getBoundingClientRect().top >= 180) {
+        ['html', 'js', 'bd', 'ps'].forEach(function (id, i) {
+            var barra = document.getElementById(id);
+            if (barra) barra.classList.add('barra-progreso' + (i + 1));
+        });
+        window.removeEventListener('scroll', efectoHabilidades);
     }
 }
+
+window.addEventListener('scroll', efectoHabilidades, { passive: true });
 window.addEventListener('load', efectoHabilidades);
 
 
